@@ -26,13 +26,21 @@ function App() {
 
     return (
         <>
-            <div className="row">
-                <div className="col">
-                    <MenuButton btnColour={colour} onClick={toggleMenu}>
-                        {showMenu === false ? "O" : "X"}
-                    </MenuButton>
+            <div className="container text-center">
+                <div className="row justify-content-start">
+                    <div className="col-4">
+                        <MenuButton btnColour={colour} onClick={toggleMenu}>
+                            {showMenu === false ? "O" : "X"}
+                        </MenuButton>
+                    </div>
+                    <div className="col-4">
+                        <div className="col align-self-start">
+                            <h1>RSVP</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div className="d-flex justify-content-center">
                 <div>
                     {showMenu === false && (

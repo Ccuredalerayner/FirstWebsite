@@ -9,6 +9,7 @@ function App() {
             <Button colour="success" onClick={() => console.log("YAY!")}>
                 Please click
             </Button>
+            <Button onClick={() => console.log("oops")}>nope</Button>
         </div>
     );
 }

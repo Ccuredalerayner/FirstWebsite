@@ -3,8 +3,12 @@ import MenuButton from "./componants/MenuButton";
 
 function App() {
     const [colour, setcolour] = useState("white");
-    const click = (colour: string) => {
-        setcolour(colour);
+    const toggleMenu = () => {
+        if (colour === "white") {
+            setcolour("grey");
+        } else {
+            setcolour("white");
+        }
     };
 
     useEffect(() => {
@@ -13,7 +17,7 @@ function App() {
 
     return (
         <div className="mx-auto p-2">
-            <MenuButton onClick={click} />
+            <MenuButton onClick={toggleMenu} />
         </div>
     );
 }

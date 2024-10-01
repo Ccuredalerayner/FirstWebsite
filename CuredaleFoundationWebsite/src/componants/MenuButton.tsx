@@ -1,10 +1,10 @@
 interface MenuButtonProp {
-    onClick: (colour: string) => void;
+    onClick: () => void;
 }
 
 const MenuButton = ({ onClick }: MenuButtonProp) => {
     return (
-        <div className={"btn btn-primary"} onClick={() => onClick("grey")}>
+        <div className={"btn btn-primary"} onClick={() => onClick()}>
             O
         </div>
     );

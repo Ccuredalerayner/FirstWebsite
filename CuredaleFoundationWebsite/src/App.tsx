@@ -1,15 +1,16 @@
+import Alert from "./componants/Alert";
 import Button from "./componants/Button";
+import { useState } from "react";
 
 function App() {
+    const [buttonPressed, setButtonPressed] = useState(0);
+
     return (
         <div>
-            <Button colour="primary" onClick={() => console.log("OUCH")}>
-                DO NOT CLICK!
-            </Button>
-            <Button colour="success" onClick={() => console.log("YAY!")}>
-                Please click
-            </Button>
-            <Button onClick={() => console.log("oops")}>nope</Button>
+            {buttonPressed === 1 && (
+                <Alert onDismiss={setButtonPressed}>This is and alert</Alert>
+            )}
+            <Button isPressed={setButtonPressed}> Alert</Button>
         </div>
     );
 }

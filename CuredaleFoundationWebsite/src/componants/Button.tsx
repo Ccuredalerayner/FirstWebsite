@@ -1,12 +1,15 @@
+import { ReactNode } from "react";
+import { useState } from "react";
+
 interface ButtonProp {
     children: string;
     colour?: "primary" | "success";
-    onClick: () => void;
+    isPressed: (value: number) => void;
 }
 
-const Button = ({ children, colour = "primary", onClick }: ButtonProp) => {
+const Button = ({ children, colour = "primary", isPressed }: ButtonProp) => {
     return (
-        <button className={"btn btn-" + colour} onClick={onClick}>
+        <button className={"btn btn-" + colour} onClick={() => isPressed(1)}>
             {children}
         </button>
     );

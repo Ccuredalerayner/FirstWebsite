@@ -1,7 +1,14 @@
-import React from "react";
+interface ButtonProp {
+    text: string;
+    onClick: () => void;
+}
 
-const Button = () => {
-    return <div className="btn btn-primary">Button</div>;
+const Button = ({ text, onClick }: ButtonProp) => {
+    return (
+        <div className="btn btn-primary" onClick={onClick}>
+            {text}
+        </div>
+    );
 };
 
 export default Button;

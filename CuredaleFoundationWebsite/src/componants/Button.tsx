@@ -1,12 +1,12 @@
 interface ButtonProp {
-    text: string;
+    children: string;
     onClick: () => void;
 }
 
-const Button = ({ text, onClick }: ButtonProp) => {
+const Button = ({ children, onClick }: ButtonProp) => {
     return (
         <button className="btn btn-primary" onClick={onClick}>
-            {text}
+            {children}
         </button>
     );
 };

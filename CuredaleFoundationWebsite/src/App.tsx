@@ -3,7 +3,8 @@ import MenuButton from "./componants/MenuButton";
 import ListGroup from "./componants/ListGroup";
 
 function App() {
-    const listGroupItems = ["Apple", "Not Apple"];
+    const listGroupItemsHomePage = ["Designes", "Stationery"];
+    const listGroupItemsMenu = ["Home", "Help", "FAQ"];
     const [showMenu, setShowMenu] = useState(false);
     const [colour, setcolour] = useState("white");
     const toggleMenu = () => {
@@ -25,18 +26,34 @@ function App() {
 
     return (
         <>
-            <div className="mx-auto p-2">
-                <MenuButton btnColour={colour} onClick={toggleMenu}>
-                    {showMenu === false ? "O" : "X"}
-                </MenuButton>
+            <div className="row">
+                <div className="col">
+                    <MenuButton btnColour={colour} onClick={toggleMenu}>
+                        {showMenu === false ? "O" : "X"}
+                    </MenuButton>
+                </div>
             </div>
-            <div>
-                <ListGroup
-                    btnColour={colour}
-                    items={listGroupItems}
-                    heading="List"
-                    onSelectItem={headleSelectListGroupItem}
-                />
+            <div className="d-flex justify-content-center">
+                <div>
+                    {showMenu === false && (
+                        <ListGroup
+                            btnColour={colour}
+                            items={listGroupItemsHomePage}
+                            heading="Home Page"
+                            onSelectItem={headleSelectListGroupItem}
+                        />
+                    )}
+                </div>
+                <div>
+                    {showMenu === true && (
+                        <ListGroup
+                            btnColour={colour}
+                            items={listGroupItemsMenu}
+                            heading="Menu"
+                            onSelectItem={headleSelectListGroupItem}
+                        />
+                    )}
+                </div>
             </div>
         </>
     );

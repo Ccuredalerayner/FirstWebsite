@@ -5,9 +5,9 @@ interface ButtonProp {
 
 const Button = ({ text, onClick }: ButtonProp) => {
     return (
-        <div className="btn btn-primary" onClick={onClick}>
+        <button className="btn btn-primary" onClick={onClick}>
             {text}
-        </div>
+        </button>
     );
 };
 

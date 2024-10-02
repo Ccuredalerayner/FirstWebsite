@@ -5,7 +5,7 @@ import Hamburger from "./componants/Hamburger";
 
 function App() {
     return (
-        <div>
+        <div className="d-md-none d-lg-block">
             <Hamburger />
         </div>
     );

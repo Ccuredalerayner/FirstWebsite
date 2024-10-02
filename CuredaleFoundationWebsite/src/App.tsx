@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Hamburger from "./componants/Hamburger";
 import MainMenu from "./componants/MainMenu";
 import Button from "./componants/Button";
+import HamburgerMenu from "./componants/HamburgerMenu";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -39,6 +40,24 @@ function App() {
                             Contact
                         </Button>
                     </MainMenu>
+                </div>
+                <div className="hamburger-menu d-sm-block d-md-none">
+                    {hamburgerOpen && (
+                        <HamburgerMenu>
+                            <Button isPressed={() => console.log("About")}>
+                                About
+                            </Button>
+                            <Button isPressed={() => console.log("Portfolio")}>
+                                Portfolio
+                            </Button>
+                            <Button isPressed={() => console.log("Gallary")}>
+                                Gallary
+                            </Button>
+                            <Button isPressed={() => console.log("Contact")}>
+                                Contact
+                            </Button>
+                        </HamburgerMenu>
+                    )}
                 </div>
             </div>
         </>

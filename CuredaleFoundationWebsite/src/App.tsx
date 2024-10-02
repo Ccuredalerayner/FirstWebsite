@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Hamburger from "./componants/Hamburger";
 import MainMenu from "./componants/MainMenu";
+import Button from "./componants/Button";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -23,8 +24,21 @@ function App() {
                         <h1>RSVP</h1>
                     </div>
                 </div>
-                <div className="row">
-                    <MainMenu />
+                <div className="menu row d-none d-sm-none d-md-block">
+                    <MainMenu>
+                        <Button isPressed={() => console.log("About")}>
+                            About
+                        </Button>
+                        <Button isPressed={() => console.log("Portfolio")}>
+                            Portfolio
+                        </Button>
+                        <Button isPressed={() => console.log("Gallary")}>
+                            Gallary
+                        </Button>
+                        <Button isPressed={() => console.log("Contact")}>
+                            Contact
+                        </Button>
+                    </MainMenu>
                 </div>
             </div>
         </>

@@ -1,13 +1,22 @@
 import { useState, useEffect } from "react";
-import MenuButton from "./componants/MenuButton";
-import ListGroup from "./componants/ListGroup";
 import Hamburger from "./componants/Hamburger";
 
 function App() {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+        console.log("H");
+    };
+
     return (
-        <div className="d-md-none d-lg-block">
-            <Hamburger />
-        </div>
+        <>
+            <div
+                className="hamburger d-md-none d-lg-block"
+                onClick={toggleHamburger}
+            >
+                <Hamburger isOpen={hamburgerOpen} />
+            </div>
+        </>
     );
 }
 

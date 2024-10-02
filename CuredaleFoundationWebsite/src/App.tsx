@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Hamburger from "./componants/Hamburger";
+import MainMenu from "./componants/MainMenu";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -11,7 +12,7 @@ function App() {
     return (
         <>
             <div className="container text-center">
-                <div className="row justify-content-start">
+                <div className="row justify-content-start p-4">
                     <div
                         className="hamburger d-sm-block d-md-none col-4"
                         onClick={toggleHamburger}
@@ -21,6 +22,9 @@ function App() {
                     <div>
                         <h1>RSVP</h1>
                     </div>
+                </div>
+                <div className="row">
+                    <MainMenu />
                 </div>
             </div>
         </>

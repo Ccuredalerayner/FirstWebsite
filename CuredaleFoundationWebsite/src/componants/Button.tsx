@@ -3,15 +3,34 @@ import { useState } from "react";
 
 interface ButtonProp {
     children: string;
-    colour?: "primary" | "success";
     isPressed: (value: boolean) => void;
 }
 
-const Button = ({ children, colour = "primary", isPressed }: ButtonProp) => {
+const Button = ({ children, isPressed }: ButtonProp) => {
     return (
-        <button className={"btn btn-" + colour} onClick={() => isPressed(true)}>
-            {children}
-        </button>
+        <>
+            <button className={"btn menu-btn"} onClick={() => isPressed(true)}>
+                {children}
+            </button>
+            <style jsx="true">
+                {`
+                    .menu-btn {
+                        background-color: white;
+                        color: black;
+                        font-family: serif;
+                    }
+
+                    .menu-btn:hover {
+                        border: white;
+                        text-decoration: underline;
+                    }
+
+                    .menu-btn:focus {
+                        border: white;
+                    }
+                `}
+            </style>
+        </>
     );
 };
 

@@ -1,4 +1,8 @@
-const Hamburger = () => {
+interface hamburgerProp {
+    isOpen: boolean;
+}
+
+const Hamburger = ({ isOpen }: hamburgerProp) => {
     return (
         <>
             <div className="hamburger">
@@ -23,7 +27,23 @@ const Hamburger = () => {
                         border-radius: 10px;
                         background-color: black;
                         transform-origin: 1px;
-                        transition: all 0.3s linear;
+                        transition: all 0.2s linear;
+                    }
+
+                    .burger1 {
+                        transform: ${isOpen
+                            ? "rotate(45deg)"
+                            : "rotarte(0deg)"};
+                    }
+
+                    .burger2 {
+                        opacity: ${isOpen ? 0 : 1};
+                    }
+
+                    .burger3 {
+                        transform: ${isOpen
+                            ? "rotate(-45deg)"
+                            : "rotarte(0deg)"};
                     }
                 `}
             </style>

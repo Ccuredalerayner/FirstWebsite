@@ -10,11 +10,18 @@ function App() {
 
     return (
         <>
-            <div
-                className="hamburger d-md-none d-lg-block"
-                onClick={toggleHamburger}
-            >
-                <Hamburger isOpen={hamburgerOpen} />
+            <div className="container text-center">
+                <div className="row justify-content-start">
+                    <div
+                        className="hamburger d-sm-block d-md-none col-4"
+                        onClick={toggleHamburger}
+                    >
+                        <Hamburger isOpen={hamburgerOpen} />
+                    </div>
+                    <div>
+                        <h1>RSVP</h1>
+                    </div>
+                </div>
             </div>
         </>
     );

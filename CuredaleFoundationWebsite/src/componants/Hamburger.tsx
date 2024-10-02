@@ -32,7 +32,7 @@ const Hamburger = ({ isOpen }: hamburgerProp) => {
 
                     .burger1 {
                         transform: ${isOpen
-                            ? "rotate(45deg)"
+                            ? "translateX(5px) rotate(45deg)"
                             : "rotarte(0deg)"};
                     }
 
@@ -42,7 +42,7 @@ const Hamburger = ({ isOpen }: hamburgerProp) => {
 
                     .burger3 {
                         transform: ${isOpen
-                            ? "rotate(-45deg)"
+                            ? "translateX(5px) rotate(-45deg)"
                             : "rotarte(0deg)"};
                     }
                 `}

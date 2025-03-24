@@ -13,6 +13,9 @@ function App() {
 
     return (
         <>
+            <div className="background-image position-absolute">
+                <img src="src\images\shells_front_cover.jpg" className="img-fluid" alt="Responsive image" />
+            </div>
             <div className="container text-center">
                 <div className="row justify-content-start p-4">
                     <div

@@ -15,7 +15,7 @@ const Button = ({ children, isPressed }: ButtonProp) => {
             <style jsx="true">
                 {`
                     .menu-btn {
-                        background-color: white;
+                        background-color: transparent;
                         color: black;
                         font-family: serif;
                     }
@@ -23,10 +23,6 @@ const Button = ({ children, isPressed }: ButtonProp) => {
                     .menu-btn:hover {
                         border: white;
                         text-decoration: underline;
-                    }
-
-                    .menu-btn:focus {
-                        border: white;
                     }
                 `}
             </style>

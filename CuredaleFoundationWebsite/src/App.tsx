@@ -14,9 +14,15 @@ function App() {
 
     return (
         <>
-            <div className="background-image position-absolute">
-                <img src="src\images\shells_front_cover.jpg" className="img-fluid" alt="Responsive image" />
+            <div className="background-image position-absolute backup-image">
+                <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
             </div>
+            <style jsx="true">{`
+                .backup-image {
+                    z-index: -1;
+                }
+                `}
+            </style>
             <div className="container text-center">
                 <div className="row justify-content-start p-4">
                     <div

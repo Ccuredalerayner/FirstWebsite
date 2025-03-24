@@ -3,6 +3,7 @@ import Hamburger from "./componants/Hamburger";
 import MainMenu from "./componants/MainMenu";
 import Button from "./componants/Button";
 import HamburgerMenu from "./componants/HamburgerMenu";
+import Title from "./componants/Title";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -24,9 +25,7 @@ function App() {
                     >
                         <Hamburger isOpen={hamburgerOpen} />
                     </div>
-                    <div>
-                        <h1>RSVP</h1>
-                    </div>
+                    <Title />
                 </div>
                 <div className="menu row d-none d-sm-none d-md-block">
                     <MainMenu>

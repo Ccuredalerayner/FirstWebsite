@@ -14,16 +14,26 @@ function App() {
 
     return (
         <>
-            <div className="background-image position-absolute backup-image">
-                <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
-            </div>
-            <style jsx="true">{`
-                .backup-image {
-                    z-index: -1;
-                }
-                `}
-            </style>
             <div className="container text-center">
+                <div className="row">
+                    <div className="position-absolute backup-image">
+                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                    </div>
+                    <style jsx="true">{`
+                        .backup-image {
+                            z-index: -1;
+                            position: absolute;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-size: cover;
+                            background-position: 0 0;
+                        }
+                        `}
+                    </style>
+                </div>
                 <div className="row justify-content-start p-4">
                     <div
                         className="hamburger d-sm-block d-md-none col-4"
@@ -66,6 +76,30 @@ function App() {
                             </Button>
                         </HamburgerMenu>
                     )}
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <div className="second-image">
+                            <img src="src\images\secondary-images\Stationery_by_the_guest_list -019 (1).jpg" className="img-fluid" alt="Responsive image" />
+                        </div>
+                        <style jsx="true">{`
+                        .second-image {
+                            z-index: -1;
+                        }
+                        `}
+                        </style>
+                    </div>
+                    <div className="col">
+                        <div className="second-image">
+                            <img src="src\images\secondary-images\Stationery_by_the_guest_list -002.jpg" className="img-fluid" alt="Responsive image" />
+                        </div>
+                        <style jsx="true">{`
+                        .second-image {
+                            z-index: -1;
+                        }
+                        `}
+                        </style>
+                    </div>
                 </div>
             </div>
         </>

@@ -21,7 +21,6 @@ const Button = ({ children, isPressed }: ButtonProp) => {
                     }
 
                     .menu-btn:hover {
-                        border: white;
                         text-decoration: underline;
                     }
                 `}

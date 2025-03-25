@@ -111,7 +111,7 @@ function App() {
                     <div className="row p-0">
                         <div className="col p-0">
                             <div className="second-image padded-left-3">
-                                <img src="src\images\third-images\board_clock.jpg" className="img-fluid" alt="left-3" />
+                                <img src="src\images\third-images\board_clock_cropped.JPG" className="img-fluid" alt="left-3" />
                             </div>
                         </div>
                         <div className="col">
@@ -158,7 +158,7 @@ function App() {
                             padding: 0px 0px 10px 17px;
                         }
                         .padded-left-3 {
-                            padding: 0px 0px 0px 0px;
+                            padding: 50px 0px 0px 0px;
                         }
                         .padded-right-4 {
                             padding: 0px 0px 10px 17px;

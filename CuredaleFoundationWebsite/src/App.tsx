@@ -64,11 +64,12 @@ function App() {
                         )}
                     </div>
                 </div>
-                <div className="row">
-                    <div className="backup-image">
-                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
-                    </div>
-                    <style jsx="true">{`
+                <div>
+                    <div className="row">
+                        <div className="backup-image">
+                            <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                        </div>
+                        <style jsx="true">{`
                         .backup-image {
                             z-index: -1;
                             display: block;
@@ -80,32 +81,51 @@ function App() {
                             background-position: 0 0;
                         }
                         `}
-                    </style>
-                </div>
-                <div className="row">
-                    <div className="col">
-                        <div className="second-image">
-                            <img src="src\images\secondary-images\Stationery_by_the_guest_list -019 (1).jpg" className="img-fluid" alt="Responsive image" />
+                        </style>
+                    </div>
+                    <div className="row p-0">
+                        <div className="col p-0">
+                            <div className="second-image padded-left-1">
+                                <img src="src\images\secondary-images\bee_in_a_box.jpg" className="img-fluid" alt="left-1" />
+                            </div>
                         </div>
-                        <style jsx="true">{`
+                        <div className="col p-0">
+                            <div className="second-image padded-right-1">
+                                <img src="src\images\secondary-images\rsvp_save_stick.jpg" className="img-fluid" alt="right-1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row p-0">
+                        <div className="col p-0">
+                            <div className="second-image padded-left-2">
+                                <img src="src\images\secondary-images\invites.jpg" className="img-fluid" alt="left-2" />
+                            </div>
+                        </div>
+                        <div className="col p-0">
+                            <div className="second-image padded-right-2">
+                                <img src="src\images\secondary-images\blue_bee.jpg" className="img-fluid" alt="right-2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style jsx="true">{`
                         .second-image {
                             z-index: -1;
                         }
-                        `}
-                        </style>
-                    </div>
-                    <div className="col">
-                        <div className="second-image">
-                            <img src="src\images\secondary-images\Stationery_by_the_guest_list -002.jpg" className="img-fluid" alt="Responsive image" />
-                        </div>
-                        <style jsx="true">{`
-                        .second-image {
-                            z-index: -1;
+                        .padded-left-1 {
+                            padding: 10px 5px 5px 10px;
                         }
-                        `}
-                        </style>
-                    </div>
-                </div>
+                        .padded-right-1 {
+                            padding: 10px 10px 5px 5px;
+                        }
+                            .padded-left-2 {
+                            padding: 5px 5px 10px 10px;
+                        }
+                        .padded-right-2 {
+                            padding: 5px 10px 10px 5px;
+                        }
+                    `}
+                </style>
             </div>
         </>
     );

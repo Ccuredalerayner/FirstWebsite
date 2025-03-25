@@ -4,6 +4,7 @@ import MainMenu from "./componants/MainMenu";
 import Button from "./componants/Button";
 import HamburgerMenu from "./componants/HamburgerMenu";
 import Title from "./componants/Title";
+import ImageCarousel from "./componants/ImageCarousel";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -126,6 +127,16 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    <div className="row image-carousel">
+                        <ImageCarousel />
+                    </div>
+                    <style jsx="true">{`
+                        .image-carousel {
+                            /*  top, right, bottom, left: */
+                            padding: 5px 10px 5px 10px;
+                        }
+                        `}
+                    </style>
                 </div>
                 <style jsx="true">{`
                         .second-image {
@@ -143,7 +154,6 @@ function App() {
                         .padded-right-2 {
                             padding: 5px 10px 5px 5px;
                         }
-                            /*  top, right, bottom, left: */
                         .padded-right-3 {
                             padding: 0px 0px 10px 17px;
                         }

@@ -14,54 +14,23 @@ function App() {
 
     return (
         <>
-            <div className="container text-center">
-                <div className="row">
-                    <div className="position-absolute backup-image">
-                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+            <div className="">
+                <div className="position-absolute">
+                    <div className="row justify-content-start p-4">
+                        <div
+                            className="hamburger d-sm-block d-md-none col-4"
+                            onClick={toggleHamburger}
+                        >
+                            <Hamburger isOpen={hamburgerOpen} />
+                        </div>
                     </div>
-                    <style jsx="true">{`
-                        .backup-image {
-                            z-index: -1;
-                            position: absolute;
-                            display: block;
-                            top: 0;
-                            left: 0;
-                            height: 100%;
-                            width: 100%;
-                            background-size: cover;
-                            background-position: 0 0;
-                        }
-                        `}
-                    </style>
-                </div>
-                <div className="row justify-content-start p-4">
-                    <div
-                        className="hamburger d-sm-block d-md-none col-4"
-                        onClick={toggleHamburger}
-                    >
-                        <Hamburger isOpen={hamburgerOpen} />
+                    <div className="row text-center">
+                        <div className="col">
+                            <Title />
+                        </div>
                     </div>
-                    <Title />
-                </div>
-                <div className="menu row d-none d-sm-none d-md-block">
-                    <MainMenu>
-                        <Button isPressed={() => console.log("About")}>
-                            About
-                        </Button>
-                        <Button isPressed={() => console.log("Portfolio")}>
-                            Portfolio
-                        </Button>
-                        <Button isPressed={() => console.log("Gallary")}>
-                            Gallary
-                        </Button>
-                        <Button isPressed={() => console.log("Contact")}>
-                            Contact
-                        </Button>
-                    </MainMenu>
-                </div>
-                <div className="hamburger-menu d-sm-block d-md-none">
-                    {hamburgerOpen && (
-                        <HamburgerMenu>
+                    <div className="menu row d-none d-sm-none d-md-block">
+                        <MainMenu>
                             <Button isPressed={() => console.log("About")}>
                                 About
                             </Button>
@@ -74,8 +43,44 @@ function App() {
                             <Button isPressed={() => console.log("Contact")}>
                                 Contact
                             </Button>
-                        </HamburgerMenu>
-                    )}
+                        </MainMenu>
+                    </div>
+                    <div className="hamburger-menu d-sm-block d-md-none">
+                        {hamburgerOpen && (
+                            <HamburgerMenu>
+                                <Button isPressed={() => console.log("About")}>
+                                    About
+                                </Button>
+                                <Button isPressed={() => console.log("Portfolio")}>
+                                    Portfolio
+                                </Button>
+                                <Button isPressed={() => console.log("Gallary")}>
+                                    Gallary
+                                </Button>
+                                <Button isPressed={() => console.log("Contact")}>
+                                    Contact
+                                </Button>
+                            </HamburgerMenu>
+                        )}
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="backup-image">
+                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                    </div>
+                    <style jsx="true">{`
+                        .backup-image {
+                            z-index: -1;
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-size: cover;
+                            background-position: 0 0;
+                        }
+                        `}
+                    </style>
                 </div>
                 <div className="row">
                     <div className="col">

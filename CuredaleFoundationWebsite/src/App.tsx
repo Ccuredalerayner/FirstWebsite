@@ -14,7 +14,7 @@ function App() {
 
     return (
         <>
-            <div className="">
+            <div className="body">
                 <div className="position-absolute">
                     <div className="row justify-content-start p-4">
                         <div
@@ -127,6 +127,13 @@ function App() {
                     `}
                 </style>
             </div>
+            <style jsx="true">{`
+                    .body {
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+                    }
+                `}
+            </style>
         </>
     );
 }

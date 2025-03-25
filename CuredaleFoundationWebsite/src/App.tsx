@@ -107,6 +107,25 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    <div className="row p-0">
+                        <div className="col p-0">
+                            <div className="second-image padded-left-3">
+                                <img src="src\images\third-images\board_clock.jpg" className="img-fluid" alt="left-3" />
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="row p-0">
+                                <div className="second-image padded-right-3">
+                                    <img src="src\images\third-images\three_leaf.jpg" className="img-fluid" alt="right-3" />
+                                </div>
+                            </div>
+                            <div className="row p-0">
+                                <div className="second-image padded-right-4">
+                                    <img src="src\images\third-images\cutlery.jpg" className="img-fluid" alt="right-4" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <style jsx="true">{`
                         .second-image {
@@ -118,11 +137,21 @@ function App() {
                         .padded-right-1 {
                             padding: 10px 10px 5px 5px;
                         }
-                            .padded-left-2 {
+                        .padded-left-2 {
                             padding: 5px 5px 10px 10px;
                         }
                         .padded-right-2 {
-                            padding: 5px 10px 10px 5px;
+                            padding: 5px 10px 5px 5px;
+                        }
+                            /*  top, right, bottom, left: */
+                        .padded-right-3 {
+                            padding: 0px 0px 10px 17px;
+                        }
+                        .padded-left-3 {
+                            padding: 0px 0px 0px 0px;
+                        }
+                        .padded-right-4 {
+                            padding: 0px 0px 10px 17px;
                         }
                     `}
                 </style>

@@ -30,22 +30,6 @@ function App() {
                             <Title />
                         </div>
                     </div>
-                    <div className="menu row d-none d-sm-none d-md-block">
-                        <MainMenu>
-                            <Button isPressed={() => console.log("About")}>
-                                About
-                            </Button>
-                            <Button isPressed={() => console.log("Portfolio")}>
-                                Portfolio
-                            </Button>
-                            <Button isPressed={() => console.log("Gallary")}>
-                                Gallary
-                            </Button>
-                            <Button isPressed={() => console.log("Contact")}>
-                                Contact
-                            </Button>
-                        </MainMenu>
-                    </div>
                     <div className="hamburger-menu d-sm-block d-md-none">
                         {hamburgerOpen && (
                             <HamburgerMenu>
@@ -83,6 +67,24 @@ function App() {
                         }
                         `}
                         </style>
+                    </div>
+                    <div className="row text-center">
+                        <div className="menu row d-none d-sm-none d-md-block">
+                            <MainMenu>
+                                <Button isPressed={() => console.log("About")}>
+                                    About
+                                </Button>
+                                <Button isPressed={() => console.log("Portfolio")}>
+                                    Portfolio
+                                </Button>
+                                <Button isPressed={() => console.log("Gallary")}>
+                                    Gallary
+                                </Button>
+                                <Button isPressed={() => console.log("Contact")}>
+                                    Contact
+                                </Button>
+                            </MainMenu>
+                        </div>
                     </div>
                     <div className="row p-0">
                         <div className="col p-0">

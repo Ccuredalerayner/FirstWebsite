@@ -25,11 +25,6 @@ function App() {
                             <Hamburger isOpen={hamburgerOpen} />
                         </div>
                     </div>
-                    <div className="row text-center">
-                        <div className="col">
-                            <Title />
-                        </div>
-                    </div>
                     <div className="hamburger-menu d-sm-block d-md-none">
                         {hamburgerOpen && (
                             <HamburgerMenu>
@@ -50,21 +45,19 @@ function App() {
                     </div>
                 </div>
                 <div>
-                    <div className="row">
-                        <div className="backup-image">
-                            <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                    <div className="row position-relative">
+                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                        <div className="centered position-absolute">
+                            <Title />
                         </div>
                         <style jsx="true">{`
-                        .backup-image {
-                            z-index: -1;
-                            display: block;
-                            top: 0;
-                            left: 0;
-                            height: 100%;
-                            width: 100%;
-                            background-size: cover;
-                            background-position: 0 0;
-                        }
+                                .centered {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    text-align: center
+                                    }
                         `}
                         </style>
                     </div>

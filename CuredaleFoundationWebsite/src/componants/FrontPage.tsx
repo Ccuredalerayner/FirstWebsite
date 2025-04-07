@@ -8,42 +8,42 @@ const FrontPage = () => {
                 <div className="row p-0">
                     <div className="col p-0">
                         <div className="second-image padded-left-1">
-                            <img src="src\images\secondary-images\bee_in_a_box.jpg" className="img-fluid" alt="left-1" />
+                            <img src="src\images\front-page\019_bee_in_a_box.jpg" className="img-fluid" alt="left-1" />
                         </div>
                     </div>
                     <div className="col p-0">
                         <div className="second-image padded-right-1">
-                            <img src="src\images\secondary-images\rsvp_save_stick.jpg" className="img-fluid" alt="right-1" />
+                            <img src="src\images\front-page\057_pink_pen_flower.jpg" className="img-fluid" alt="right-1" />
                         </div>
                     </div>
                 </div>
                 <div className="row p-0">
                     <div className="col p-0">
                         <div className="second-image padded-left-2">
-                            <img src="src\images\secondary-images\invites.jpg" className="img-fluid" alt="left-2" />
+                            <img src="src\images\front-page\038_invites.jpg" className="img-fluid" alt="left-2" />
                         </div>
                     </div>
                     <div className="col p-0">
                         <div className="second-image padded-right-2">
-                            <img src="src\images\secondary-images\blue_bee.jpg" className="img-fluid" alt="right-2" />
+                            <img src="src\images\front-page\066_lavender_candle.jpg" className="img-fluid" alt="right-2" />
                         </div>
                     </div>
                 </div>
                 <div className="row p-0">
                     <div className="col p-0">
                         <div className="second-image padded-left-3">
-                            <img src="src\images\third-images\board_clock_cropped.JPG" className="img-fluid" alt="left-3" />
+                            <img src="src\images\front-page\045_board_clock.jpg" className="img-fluid" alt="left-3" />
                         </div>
                     </div>
                     <div className="col">
                         <div className="row p-0">
                             <div className="second-image padded-right-3">
-                                <img src="src\images\third-images\three_leaf.jpg" className="img-fluid" alt="right-3" />
+                                <img src="src\images\front-page\042_three_leaf.jpg" className="img-fluid" alt="right-3" />
                             </div>
                         </div>
                         <div className="row p-0">
                             <div className="second-image padded-right-4">
-                                <img src="src\images\third-images\cutlery.jpg" className="img-fluid" alt="right-4" />
+                                <img src="src\images\front-page\022_gold_scissors_everything.jpg" className="img-fluid" alt="right-4" />
                             </div>
                         </div>
                     </div>

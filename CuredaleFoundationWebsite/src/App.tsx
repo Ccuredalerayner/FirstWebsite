@@ -3,9 +3,8 @@ import Hamburger from "./componants/Hamburger";
 import MainMenu from "./componants/MainMenu";
 import Button from "./componants/Button";
 import HamburgerMenu from "./componants/HamburgerMenu";
-import Title from "./componants/Title";
-import ImageCarousel from "./componants/ImageCarousel";
 import FrontPage from "./componants/FrontPage";
+import TitlePage from "./componants/TitlePage";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -46,22 +45,7 @@ function App() {
                     </div>
                 </div>
                 <div>
-                    <div className="row position-relative">
-                        <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
-                        <div className="centered position-absolute">
-                            <Title />
-                        </div>
-                        <style jsx="true">{`
-                                .centered {
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                    text-align: center
-                                    }
-                        `}
-                        </style>
-                    </div>
+                    <TitlePage />
                     <div className="row text-center">
                         <div className="menu row d-none d-sm-none d-md-block">
                             <MainMenu>

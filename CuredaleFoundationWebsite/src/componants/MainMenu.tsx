@@ -1,11 +1,29 @@
-import { ReactNode } from "react";
+import MainMenuObject from "./MainMenuObject";
+import Button from "./Button";
 
-interface MainMenuProp {
-    children: ReactNode[];
-}
-
-const MainMenu = ({ children }: MainMenuProp) => {
-    return <div className="menu-buttons">{children}</div>;
+const Title = () => {
+    return (
+        <>
+            <div className="row text-center">
+                <div className="menu row d-none d-sm-none d-md-block">
+                    <MainMenuObject>
+                        <Button isPressed={() => console.log("About")}>
+                            About
+                        </Button>
+                        <Button isPressed={() => console.log("Portfolio")}>
+                            Portfolio
+                        </Button>
+                        <Button isPressed={() => console.log("Gallary")}>
+                            Gallary
+                        </Button>
+                        <Button isPressed={() => console.log("Contact")}>
+                            Contact
+                        </Button>
+                    </MainMenuObject>
+                </div>
+            </div>
+        </>
+    );
 };
 
-export default MainMenu;
+export default Title;

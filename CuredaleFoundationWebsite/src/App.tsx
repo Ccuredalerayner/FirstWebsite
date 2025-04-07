@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Hamburger from "./componants/Hamburger";
-import MainMenu from "./componants/MainMenu";
 import Button from "./componants/Button";
 import HamburgerMenu from "./componants/HamburgerMenu";
 import FrontPage from "./componants/FrontPage";
 import TitlePage from "./componants/TitlePage";
+import MainMenu from "./componants/MainMenu";
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -46,24 +46,7 @@ function App() {
                 </div>
                 <div>
                     <TitlePage />
-                    <div className="row text-center">
-                        <div className="menu row d-none d-sm-none d-md-block">
-                            <MainMenu>
-                                <Button isPressed={() => console.log("About")}>
-                                    About
-                                </Button>
-                                <Button isPressed={() => console.log("Portfolio")}>
-                                    Portfolio
-                                </Button>
-                                <Button isPressed={() => console.log("Gallary")}>
-                                    Gallary
-                                </Button>
-                                <Button isPressed={() => console.log("Contact")}>
-                                    Contact
-                                </Button>
-                            </MainMenu>
-                        </div>
-                    </div>
+                    <MainMenu />
                     <FrontPage />
                 </div>
             </div>

@@ -4,7 +4,7 @@ const TitlePage = () => {
     return (
         <>
             <div className="row position-relative">
-                <img src="src\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
+                <img src=".\images\shells_front_cover.jpg" className="img-fluid backup-image" alt="Responsive image" />
                 <div className="centered position-absolute">
                     <Title />
                 </div>

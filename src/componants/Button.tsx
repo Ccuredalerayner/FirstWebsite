@@ -18,6 +18,7 @@ const Button = ({ children, isPressed }: ButtonProp) => {
                         background-color: transparent;
                         color: black;
                         font-family: serif;
+                        font-size: 24px;
                     }
 
                     .menu-btn:hover {

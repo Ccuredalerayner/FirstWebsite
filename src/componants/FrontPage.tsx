@@ -30,10 +30,8 @@ const FrontPage = () => {
                     </div>
                 </div>
                 <div className="row p-0">
-                    <div className="col p-0">
-                        <div className="second-image padded-left-3">
-                            <img src=".\images\front-page\045_board_clock_2_cropped.jpg" className="img-fluid" alt="left-3" />
-                        </div>
+                    <div className="col p-0 double-image">
+                        <img src=".\images\front-page\045_board_clock_2_cropped.jpg" className="img-fluid" alt="left-3" />
                     </div>
                     <div className="col">
                         <div className="row p-0">
@@ -42,7 +40,7 @@ const FrontPage = () => {
                             </div>
                         </div>
                         <div className="row p-0">
-                            <div className="second-image padded-right-4">
+                            <div className="second-image padded-right-3">
                                 <img src=".\images\front-page\022_gold_scissors_everything.jpg" className="img-fluid" alt="right-4" />
                             </div>
                         </div>
@@ -63,6 +61,11 @@ const FrontPage = () => {
                 .second-image {
                     z-index: -1;
                 }
+                .double-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .padded-left-1 {
                     padding: 10px 5px 5px 10px;
                 }
@@ -76,13 +79,7 @@ const FrontPage = () => {
                     padding: 5px 10px 5px 5px;
                 }
                 .padded-right-3 {
-                    padding: 0px 0px 10px 17px;
-                }
-                .padded-left-3 {
-                    padding: 50px 0px 0px 0px;
-                }
-                .padded-right-4 {
-                    padding: 0px 0px 10px 17px;
+                    padding: 0px 0px 10px 15px;
                 }
             `}
             </style>

@@ -7,7 +7,7 @@ function ImageCarousel() {
                 <Carousel>
                     <Carousel.Item>
                         <div className="image">
-                            <img src=".\images\carousel-images\1_c_005.jpg" className="img-fluid" alt="left-2" />
+                            <img src=".\images\carousel-images\1_c_003.jpg" className="img-fluid" alt="left-2" />
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>

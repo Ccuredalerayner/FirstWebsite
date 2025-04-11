@@ -32,7 +32,7 @@ const FrontPage = () => {
                 <div className="row p-0">
                     <div className="col p-0">
                         <div className="second-image padded-left-3">
-                            <img src=".\images\front-page\045_board_clock.jpg" className="img-fluid" alt="left-3" />
+                            <img src=".\images\front-page\045_board_clock_2_cropped.jpg" className="img-fluid" alt="left-3" />
                         </div>
                     </div>
                     <div className="col">

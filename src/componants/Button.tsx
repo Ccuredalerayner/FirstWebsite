@@ -9,7 +9,7 @@ interface ButtonProp {
 const Button = ({ children, isPressed }: ButtonProp) => {
     return (
         <>
-            <button className={"btn menu-btn"} onClick={() => isPressed(true)}>
+            <button className={"menu-btn"} onClick={() => isPressed(true)}>
                 {children}
             </button>
             <style jsx="true">
@@ -19,6 +19,7 @@ const Button = ({ children, isPressed }: ButtonProp) => {
                         color: black;
                         font-family: Roseritta;
                         font-size: 24px;
+                        border-color: transparent;
                     }
 
                     .menu-btn:hover {

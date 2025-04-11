@@ -25,29 +25,36 @@ function App() {
                             <Hamburger isOpen={hamburgerOpen} />
                         </div>
                     </div>
-                    <div className="hamburger-menu d-sm-block d-md-none">
-                        {hamburgerOpen && (
-                            <HamburgerMenu>
-                                <Button isPressed={() => console.log("About")}>
-                                    About
-                                </Button>
-                                <Button isPressed={() => console.log("Portfolio")}>
-                                    Portfolio
-                                </Button>
-                                <Button isPressed={() => console.log("Gallary")}>
-                                    Gallary
-                                </Button>
-                                <Button isPressed={() => console.log("Contact")}>
-                                    Contact
-                                </Button>
-                            </HamburgerMenu>
-                        )}
-                    </div>
                 </div>
                 <div>
                     <TitlePage />
-                    <MainMenu />
-                    <FrontPage />
+                    <div className="row">
+                        <div className="hamburger-menu centered d-sm-block d-md-none">
+                            {hamburgerOpen && (
+                                <HamburgerMenu>
+                                    <Button isPressed={() => console.log("About")}>
+                                        About
+                                    </Button>
+                                    <Button isPressed={() => console.log("Portfolio")}>
+                                        Portfolio
+                                    </Button>
+                                    <Button isPressed={() => console.log("Gallary")}>
+                                        Gallary
+                                    </Button>
+                                    <Button isPressed={() => console.log("Contact")}>
+                                        Contact
+                                    </Button>
+                                </HamburgerMenu>
+                            )}
+                        </div>
+                    </div>
+                    {!hamburgerOpen && (
+                        <>
+                            <MainMenu />
+                            <FrontPage />
+                        </>
+                    )}
+
                 </div>
             </div>
             <style jsx="true">{`

@@ -1,8 +1,9 @@
-import MainMenuObject from "./MainMenuObject";
+
 import Button from "./Button";
+import HamburgerMenu from "./HamburgerMenu";
 import react, { useState } from 'react';
 
-const Title = () => {
+const HamburgerMenuOpen = () => {
     const [message, setMessage] = useState()
     const aboutMessage =
         <div className="p-4 white-space: pre-line">
@@ -29,21 +30,22 @@ const Title = () => {
             The production of your order will only begin after express permission from you the buyer confirming the design and
             final payment.
             <br></br><br></br>
-            Due to the personalized nature of our products returns are not possible. 
+            Due to the personalized nature of our products returns are not possible.
             Any issues with the product delivered must be raised within 7 days of delivery.
         </div>
 
     const privacyMessage =
-    <div className="p-4 white-space: pre-line">
-        Stationery by The Guest List takes privacy very seriously. We do not sell or pass on your information to any external parties. 
-        The data and information provided are only used to produce and complete your order.
-    </div>
+        <div className="p-4 white-space: pre-line">
+            Stationery by The Guest List takes privacy very seriously. We do not sell or pass on your information to any external parties.
+            The data and information provided are only used to produce and complete your order.
+        </div>
 
     const returnsPolicyMessage =
-    <div className="p-4 white-space: pre-line">
-        All products produced are made to order and personalized, as a result, we are unable to accept returns or refunds. 
-        Should there be any problems with your order once you have received it please contact us via email within 7 days.
-    </div>
+        <div className="p-4 white-space: pre-line">
+            All products produced are made to order and personalized, as a result, we are unable to accept returns or refunds.
+            Should there be any problems with your order once you have received it please contact us via email within 7 days.
+        </div>
+
 
     function displayMessage(message: any) {
         setMessage(message)
@@ -52,28 +54,24 @@ const Title = () => {
     return (
         <>
             <div className="row text-center">
-                <div className="menu">
-                    <MainMenuObject>
-                        <Button isPressed={() => displayMessage(aboutMessage)}>
-                            About
-                        </Button>
-                        <Button isPressed={() => displayMessage(termsAndConditionsMessage)}>
-                            Terms and Conditions
-                        </Button>
-                        <Button isPressed={() => displayMessage(privacyMessage)}>
-                            Privacy
-                        </Button>
-                        <Button isPressed={() => displayMessage(returnsPolicyMessage)}>
-                            Returns Policy
-                        </Button>
-                    </MainMenuObject>
-                    <div>
-                        {message}
-                    </div>
-                </div>
+                <HamburgerMenu>
+                    <Button isPressed={() => displayMessage(aboutMessage)}>
+                        About
+                    </Button>
+                    <Button isPressed={() => displayMessage(termsAndConditionsMessage)}>
+                        Terms and Conditions
+                    </Button>
+                    <Button isPressed={() => displayMessage(privacyMessage)}>
+                        Privacy
+                    </Button>
+                    <Button isPressed={() => displayMessage(returnsPolicyMessage)}>
+                        Returns Policy
+                    </Button>
+                </HamburgerMenu>
+                {message}
             </div>
         </>
     );
 };
 
-export default Title;
+export default HamburgerMenuOpen;

@@ -5,6 +5,7 @@ import HamburgerMenu from "./componants/HamburgerMenu";
 import FrontPage from "./componants/FrontPage";
 import TitlePage from "./componants/TitlePage";
 import MainMenu from "./componants/MainMenu";
+import HamburgerMenuOpen from "./componants/HamburgerMenuOpen"
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -28,33 +29,15 @@ function App() {
                 </div>
                 <div>
                     <TitlePage />
-                    <div className="row">
-                        <div className="hamburger-menu centered d-sm-block d-md-none">
-                            {hamburgerOpen && (
-                                <HamburgerMenu>
-                                    <Button isPressed={() => console.log("About")}>
-                                        About
-                                    </Button>
-                                    <Button isPressed={() => console.log("Portfolio")}>
-                                        Portfolio
-                                    </Button>
-                                    <Button isPressed={() => console.log("Gallary")}>
-                                        Gallary
-                                    </Button>
-                                    <Button isPressed={() => console.log("Contact")}>
-                                        Contact
-                                    </Button>
-                                </HamburgerMenu>
-                            )}
-                        </div>
+                    <div className="d-sm-block d-md-none">
+                        {hamburgerOpen && (
+                            <HamburgerMenuOpen />
+                        )}
                     </div>
-                    {!hamburgerOpen && (
-                        <>
-                            <MainMenu />
-                            <FrontPage />
-                        </>
-                    )}
-
+                    <div className="row d-none d-sm-none d-md-block">
+                        <MainMenu />
+                    </div>
+                    <FrontPage />
                 </div>
             </div>
             <style jsx="true">{`

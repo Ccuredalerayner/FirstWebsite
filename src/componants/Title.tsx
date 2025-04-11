@@ -2,12 +2,14 @@ const Title = () => {
     return (
         <div className="title">
             <div className="title">
-                <h1>Stationery By</h1>
-                <h1>The Guest List</h1>
+                Stationery By<br></br>
+                The Guest List
             </div>
             <style jsx="true">{`
                     .title {
                         z-index: 10;
+                        font-family: Roseritta;
+                        font-size: 50px;
                     }
                     `}
             </style>

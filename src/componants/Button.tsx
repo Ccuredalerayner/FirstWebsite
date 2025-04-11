@@ -17,7 +17,7 @@ const Button = ({ children, isPressed }: ButtonProp) => {
                     .menu-btn {
                         background-color: transparent;
                         color: black;
-                        font-family: serif;
+                        font-family: Roseritta;
                         font-size: 24px;
                     }
 

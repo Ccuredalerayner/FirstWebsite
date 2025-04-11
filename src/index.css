@@ -1,5 +1,5 @@
 @font-face{
     font-family: "Roseritta";
     src:local("Roseritta"),
-    url('./assets/fonts/Roseritta/Roseritta.ttf') 
+    url('../src/assets/fonts/Roseritta/Roseritta.ttf') 
 }

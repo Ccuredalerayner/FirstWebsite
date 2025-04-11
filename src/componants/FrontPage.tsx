@@ -30,8 +30,10 @@ const FrontPage = () => {
                     </div>
                 </div>
                 <div className="row p-0">
-                    <div className="col p-0 double-image">
-                        <img src=".\images\front-page\045_board_clock_2_cropped.jpg" className="img-fluid" alt="left-3" />
+                    <div className="col p-0 double-image-container">
+                        <div className="double-image">
+                            <img src=".\images\front-page\045_board_clock.jpg" className="img-fluid" alt="left-3" />
+                        </div>
                     </div>
                     <div className="col">
                         <div className="row p-0">
@@ -62,6 +64,9 @@ const FrontPage = () => {
                     z-index: -1;
                 }
                 .double-image {
+                    padding: 0px 5px 5px 0px;
+                }
+                .double-image-container{
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -79,7 +84,7 @@ const FrontPage = () => {
                     padding: 5px 10px 5px 5px;
                 }
                 .padded-right-3 {
-                    padding: 0px 0px 10px 15px;
+                    padding: 0px 0px 10px 5px;
                 }
             `}
             </style>
